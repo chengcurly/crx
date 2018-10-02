@@ -1,0 +1,74 @@
+
+@media only screen and (max-width: 480px) {
+  html {
+  	width: 100% !important;
+  	overflow-x: hidden !important;
+  }
+
+  body {
+  	min-width: 100% !important;
+  }
+
+  .aui-page-focused-large .aui-page-header, .aui-page-size-large .aui-page-header, .aui-page-focused-large .aui-page-panel, .aui-page-size-large .aui-page-panel, .aui-page-focused-large #footer .footer-body, .aui-page-size-large #footer .footer-body {
+      width: 100% !important;
+  }
+
+  form.aui .field-group, form.aui .group, form.aui .date-select {
+  	padding-left: 0 !important;
+  }
+
+  form.aui legend, form.aui .field-group>label, form.aui .field-group>aui-label {
+      float: none !important;
+      margin-left: 0 !important;
+      display: block !important;
+      text-align: left !important;
+  }
+
+  .aui-header {
+  	display: none !important;
+  }	  
+
+  .aui-page-header-image {
+  	display: none !important;
+  }
+
+  .aui-page-header-main, .aui-nav-breadcrumbs {
+  	width: 100% !important;
+  }
+
+  .field-group .icon-required {
+  	left: auto !important;
+  }
+
+  .command-bar {
+  	display: none !important;
+  }
+
+  .issue-side-column {
+  	display: none !important;
+  }
+
+  .aui-sidebar-wrapper {
+  	width: 0 !important;
+  }
+
+  .aui-page-panel {
+  	padding-left: 0 !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,.2);
+	}
+
+	::-webkit-scrollbar-track {
+    border-radius: 5px;
+	  background: rgba(0,0,0,.1);
+	}
+
+}
+	
