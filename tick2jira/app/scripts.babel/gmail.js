@@ -10,7 +10,7 @@ window.addEventListener ("load", function () {
     var language = navigator.language.replace('_', '-').toLowerCase();
     var iscnlang = /zh\Scn/i.test(language);
 
-    var user = $("[role='banner'] .gb_Ra.gb_Sg.gb_R .gb_b.gb_eb.gb_R")[0].getAttribute("aria-label").match(/(\w+@\w+\.\w+)/)[1]
+    var user = document.querySelector("title").innerText.match(/\-\s(\w+@\w+\.\w+)\s\-/)[1]
     var isValid = ~['support@gtasks.me', 'support@dida365.com'].indexOf(user);
 
     if (!isValid) {
@@ -150,7 +150,7 @@ window.addEventListener ("load", function () {
         issuetype: 10105,
         summary: encodeURIComponent($('.hP').text().trim()),
         // components: category2Component[$('div.zw > div > div.aim.ain').text().match(/(\w+)/)[1]] || category2Component['Other'],
-        customfield_10200: isTick ? 10218 : 10217,
+        customfield_10205: isTick ? 10224 : 10223,
         priority: 10000,
         description: encodeURIComponent($('blockquote').last().text().split('---------')[0].trim()),
         customfield_10103: encodeURIComponent(window.location.href)

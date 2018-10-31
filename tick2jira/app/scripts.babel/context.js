@@ -27,7 +27,7 @@
 					issuetype: 10105,
 					summary: encodeURIComponent($('.subtab.detail').text().trim()),
 					components: category2Component[$('.category.active .title').text()] || category2Component['Other'],
-					customfield_10200: 10226,
+					customfield_10205: 10224,
 					priority: 10000
 				}
 
@@ -53,7 +53,7 @@
 					issuetype: 10105,
 					summary: encodeURIComponent($('.topic-title').text().trim()),
 					components: category2Component[$('.breadcrumb [itemprop="title"]').eq(1).text().trim()] || category2Component['Other'],
-					customfield_10200: 10226,
+					customfield_10205: 10223,
 					customfield_10103: encodeURIComponent('https://help.dida365.com/forum/post/' + $post.data('pid')),
 					description: encodeURIComponent($post.find('.content p').text().trim()),
 					priority: 10000
